@@ -19,7 +19,6 @@ export async function signin(req: Request, res: Response) {
   const userPass = req.body.password;
 
   try {
-    console.log('Validating user');
     const authSrv = new AuthService();
     const { user, token } = await authSrv.validateUser(userName, userPass);
 

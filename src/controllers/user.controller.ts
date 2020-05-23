@@ -3,7 +3,7 @@ import { Request, Response } from "express";
 // Interfaces
 import { IRole } from "../interface/role.interface";
 
-// Helpers
+// Services
 import  UserService  from "../services/user.service";
 
 export async function list(req: Request, res: Response) {
@@ -48,7 +48,6 @@ export async function detail(req: Request, res: Response) {
     });
   }
 }
-
 
 export async function create(req: Request, res: Response) {
   const { username, displayname, password, roles } = req.body;
