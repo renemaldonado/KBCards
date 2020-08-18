@@ -1,7 +1,5 @@
 // Interfaces
 import { IRole } from "../interface/role.interface";
-import { response } from "express";
-
 
 export class RoleHelper {
 
@@ -9,6 +7,4 @@ export class RoleHelper {
     const res = roles.findIndex(r => r.roleName === requiredRole) >= 0 ? true : false;
     return res;
   }
-
-
 }

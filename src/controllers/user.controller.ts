@@ -1,7 +1,5 @@
 import { Request, Response } from "express";
 
-// Interfaces
-import { IRole } from "../interface/role.interface";
 
 // Services
 import  UserService  from "../services/user.service";
